@@ -1,0 +1,56 @@
+// 0xmertcan admin theme — aligns Payload's dark theme with the site palette.
+:root {
+  --font-body: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+
+html[data-theme='dark'] {
+  --theme-bg: #111113;
+  --theme-input-bg: #19191c;
+  --theme-elevation-0: #111113;
+  --theme-elevation-50: #161618;
+  --theme-elevation-100: #19191c;
+  --theme-elevation-150: #1f1f23;
+  --theme-elevation-200: #242428;
+  --theme-elevation-250: #2b2b30;
+  --theme-elevation-300: #34343a;
+  --theme-elevation-350: #3e3e44;
+  --theme-elevation-400: #57575d;
+  --theme-elevation-450: #6c6c72;
+  --theme-elevation-500: #8a8a90;
+  --theme-elevation-550: #949498;
+  --theme-elevation-600: #a9a9ac;
+  --theme-elevation-650: #bdbdbe;
+  --theme-elevation-700: #cfcecb;
+  --theme-elevation-750: #dcdbd7;
+  --theme-elevation-800: #e5e4e0;
+  --theme-elevation-850: #ebeae6;
+  --theme-elevation-900: #f1efea;
+  --theme-elevation-950: #f6f5f1;
+  --theme-elevation-1000: #fbfaf7;
+  --theme-error-500: #e53935;
+  --theme-success-500: #6aa66f;
+}
+
+.nav,
+.app-header {
+  border-color: var(--theme-elevation-150);
+}
+
+.btn--style-primary {
+  --bg-color: #e53935;
+  --color: #fbfaf7;
+  --hover-bg: #c62828;
+  --hover-color: #fbfaf7;
+}
+
+:focus-visible {
+  outline: 2px solid #e53935;
+  outline-offset: 2px;
+}
+
+.template-minimal {
+  background:
+    linear-gradient(var(--theme-elevation-100) 1px, transparent 1px) 0 0 / 100% 48px,
+    var(--theme-bg);
+}
